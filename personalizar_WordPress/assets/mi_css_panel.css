@@ -1,0 +1,16 @@
+/*
+eliminamos el icono de WordPress que se muestra en la esquina superior izquierda del panel de administración
+y añadimos nuestro logo
+*/
+#wp-admin-bar-wp-logo {display: none !important}
+
+.wp-admin #wpadminbar #wp-admin-bar-site-name>.ab-item:before { content: none}
+.wp-admin #wpadminbar #wp-admin-bar-site-name{
+	background-image: url(http://localhost/wp-villalba/wp-content/uploads/2019/02/logo-wp-villalba.png); background-size: 50px; 
+	/* esta url debes de cambiar por la url de tu logo */
+	background-repeat: no-repeat; padding-left:50px; background-position: 2px bottom
+}
+
+/* Cambiar el ancho del editor Gutenberg */
+/* Main column width */
+.wp-block { max-width: 95%}

@@ -1,0 +1,13 @@
+/*
+Añade nuestro logo a la página de login de WordPress, y modificamos la pagina de entrada de admin 
+Nota: debeis cambiar la url del logo (background-image) por la url de la imagen que quereis usar
+*/
+body { background: #45709a !important; }
+#login h1 a, .login h1 a {
+	background-image: url(http://localhost/wp-villalba/wp-content/uploads/2019/02/logo-wp-villalba.png); 
+	/* esta url debes de cambiar por la url de tu logo */
+	width: 200px; background-size: contain; background-repeat: no-repeat;
+}
+.login form { background: rgba(0,0,0,.1) !important; border-radius: 8px; 
+	box-shadow: 0 1px 15px rgba(0,0,0,1) !important;}
+.login label, .login #backtoblog a, .login #nav a { color: #FFF !important}
