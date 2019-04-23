@@ -72,7 +72,7 @@ Author URI: http://oscarperez.es/
 	// Personalizar el look del login del panel de control
 	// Añadimos nuestro fichero css a la página del login
 	function el_login_de_wpadmin() { 
-		wp_register_style('mi_login', WP_PLUGIN_URL.'/personalizar/assets/mi_login.css');
+		wp_register_style('mi_login', WP_PLUGIN_URL.'/personalizar_WordPress/assets/mi_login.css');
 		wp_enqueue_style('mi_login');
 	}
 	add_action( 'login_enqueue_scripts', 'el_login_de_wpadmin' );
@@ -85,7 +85,7 @@ Author URI: http://oscarperez.es/
 	** - Cambiamos el ancho del editor Gutenberg
 	*****************************************************************************************************************/
 	function modificar_CSS() {
-		wp_register_style('mi_css', WP_PLUGIN_URL.'/personalizar/assets/mi_css_panel.css');
+		wp_register_style('mi_css', WP_PLUGIN_URL.'/personalizar_WordPress/assets/mi_css_panel.css');
 		wp_enqueue_style('mi_css');
 	}
 	add_action('admin_print_styles', 'modificar_CSS');
