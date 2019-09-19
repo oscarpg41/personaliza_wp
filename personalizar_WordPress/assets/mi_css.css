@@ -1,0 +1,11 @@
+/*
+eliminamos el icono de WordPress que se muestra en la esquina superior izquierda del panel de administración y añadimos nuestro logo
+*/
+#wp-admin-bar-wp-logo {display: none}
+
+.wp-admin #wpadminbar #wp-admin-bar-site-name>.ab-item:before { content: none}
+.wp-admin #wpadminbar #wp-admin-bar-site-name{
+	background-image: url(https://www.lagranja-valsain.com/wp-content/themes/sanildefonso/images/escudo.png);
+	background-size: 20px; background-repeat: no-repeat; padding-left:30px;
+	background-position: 6px bottom;
+}

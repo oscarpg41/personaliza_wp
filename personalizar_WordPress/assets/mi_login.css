@@ -2,12 +2,18 @@
 Añade nuestro logo a la página de login de WordPress, y modificamos la pagina de entrada de admin 
 Nota: debeis cambiar la url del logo (background-image) por la url de la imagen que quereis usar
 */
-body { background: #45709a !important; }
+body { background: #45709a; }
+#login {padding:1% 0 0 !important;}
 #login h1 a, .login h1 a {
-	background-image: url(http://localhost/wp-villalba/wp-content/uploads/2019/02/logo-wp-villalba.png); 
-	/* esta url debes de cambiar por la url de tu logo */
+	background-image: url(https://www.lagranja-valsain.com/wp-content/themes/sanildefonso/images/escudo.png); 
 	width: 200px; background-size: contain; background-repeat: no-repeat;
 }
-.login form { background: rgba(0,0,0,.1) !important; border-radius: 8px; 
-	box-shadow: 0 1px 15px rgba(0,0,0,1) !important;}
-.login label, .login #backtoblog a, .login #nav a { color: #FFF !important}
+.login form { background: rgba(0,0,0,.1); border-radius: 8px; 
+	box-shadow: 0 1px 15px rgba(0,0,0,1);}
+.login label, .login #backtoblog a, .login #nav a, #jetpack-sso-wrap a { color: #FFF}
+
+#login h2, #login h3{ font-weight: 300; color: #FFF; }
+
+.login .privacy-policy-page-link, .login #nav, #jetpack-sso-wrap__action{ display:none !important; } 
+/* #jetpack-sso-wrap__action: elimina el div para acceder a traves de WordPres.com*/
+.jetpack-sso-toggle.default {display: none !important;}
